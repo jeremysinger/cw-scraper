@@ -6,6 +6,8 @@ module WikiScrapeLib
 
 import Text.HTML.Scalpel
 
-mostfrequentwordonpage :: URL -> Maybe String
-mostfrequentwordonpage _ = Nothing
+mostfrequentwordonpage :: URL -> IO (Maybe String)
+mostfrequentwordonpage page = do
+  return (Just "fixme")
+
 
