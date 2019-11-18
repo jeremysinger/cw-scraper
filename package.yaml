@@ -10,7 +10,7 @@ extra-source-files:
 - README.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
+# synopsis:            Coursework for FP(H) - wikipedia web scraper
 # category:            Web
 
 # To avoid duplicated efforts in documentation and dealing with the
@@ -20,6 +20,7 @@ description:         Please see the README on GitHub at <https://github.com/jere
 
 dependencies:
 - base >= 4.7 && < 5
+- scalpel
 
 library:
   source-dirs: src
@@ -45,3 +46,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - cw-scraper
+    - tasty
+    - tasty-hunit
