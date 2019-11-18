@@ -14,6 +14,7 @@ main = do
       getScrapedWordFromWikiPage "Banana" "musa",
       getScrapedWordFromWikiPage "Ruritania" "zenda",
       getScrapedWordFromWikiPage "USA" "american",
+      getScrapedWordFromWikiPage "China" "people",
       getScrapedWordFromWikiPage "Russia" "soviet"
     ])
 
