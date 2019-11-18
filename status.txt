@@ -1,0 +1,14 @@
+<Insert Student Name Here>
+GUID:
+Date:
+200 words max
+Some questions to consider:
+
+Does your code build properly with "stack build"?
+
+Are there any parts of the specification you did not implement in part
+A?
+
+For the 'stretch' part B, which libraries did you use and what kind of
+output did you generate?
+

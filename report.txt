@@ -1,0 +1,30 @@
+<Insert Student Name Here>
+GUID:
+Date:
+
+-- write what you want in here -- this is just some filler text --
+500 words max
+
+For this report, I am comparing my experiences with Haskell and
+Python.  In particular, I have used the Scalpel scraping library in
+Haskell, and the equivalent scrapy library in Python.
+
+Code size: Functional code in general (and Haskell in particular) is
+  highly concise. This comes from powerful features like higher order
+  functions on lists- much more concise than for/while loop
+  control-flow structures in Python. Also, high-level operators and
+  functions are provided in the standard libraries (like Data.List).
+
+
+Code readability: While Haskell code is particularly dense, it can be
+  difficult to read sometimes. Meaningful variable names might help.
+
+
+Code maintainability:
+  Bug fixes? Comments?
+
+
+Toolchain support: Does stack work as well as pip? Is there as much
+  online support for Haskell as for Python? Does this affect developer
+  productivity at all?
+
