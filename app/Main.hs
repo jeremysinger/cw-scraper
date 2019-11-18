@@ -19,9 +19,12 @@ countries = [
           "Russia"
          ]
 
+wikify :: String -> URL
+wikify x = "https://en.wikipedia.org/wiki/" ++ x
+
 main :: IO ()
 main = do
-     let words = map mostfrequentwordonpage countries
+     words <- mapM mostfrequentwordonpage (wikify <$> countries)
      let results = zip countries words
      mapM_ (\x -> putStrLn $ (fst x) ++ ": " ++ ((show.snd) x)) results
 
