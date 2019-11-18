@@ -21,6 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/jere
 dependencies:
 - base >= 4.7 && < 5
 - scalpel
+- split
 
 library:
   source-dirs: src
