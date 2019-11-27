@@ -12,11 +12,19 @@ main = do
   defaultMain (testGroup "scraper library tests"
     [ badUrlScraperTest,
       getScrapedWordFromWikiPage "Banana" "musa",
-      getScrapedWordFromWikiPage "Ruritania" "zenda",
+      getOneOfScrapedWordFromWikiPage "Ruritania" ["film", "zenda", "prisoner"],
       getScrapedWordFromWikiPage "USA" "american",
       getScrapedWordFromWikiPage "China" "people",
       getScrapedWordFromWikiPage "Russia" "soviet"
     ])
+
+getOneOfScrapedWordFromWikiPage :: String -> [String] -> TestTree
+getOneOfScrapedWordFromWikiPage article possibles =
+  testCase ("testing " ++ article ++ " page") $ do
+    res <- mostfrequentwordonpage $ "https://en.wikipedia.org/wiki/"++article
+    case res of
+      Nothing -> assertFailure "no words scraped"
+      Just w -> assertEqual ("most frequent word should be one of " ++ (show possibles)) (length $ filter (w==) possibles) 1
 
 getScrapedWordFromWikiPage :: String -> String -> TestTree
 getScrapedWordFromWikiPage article expected =
